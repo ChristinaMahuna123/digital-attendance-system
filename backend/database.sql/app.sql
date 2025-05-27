@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS attendance_db;
+
+USE attendance_db;
+
+CREATE TABLE IF NOT EXISTS attendance (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  registration_number VARCHAR(50),
+  timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
